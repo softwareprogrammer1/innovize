@@ -30,11 +30,18 @@
 
 	// Mobile menu initialization as a function for dynamic header loading
 	function initMobileMenu() {
+		console.log('initMobileMenu called');
 		$('.mobile-menu li:has(ul)').prepend('<span class="arrow"><i class="fa fa-plus"></i></span>');
 		$("#mmenu_toggle").off('click').on('click', function() {
 			$(this).toggleClass("active");
 			if ($(this).hasClass("active")) {
 				$('.mobile-nav').stop(true, true).slideDown();
+				// Fallback: forcibly show if still hidden
+				setTimeout(function() {
+					if (!$('.mobile-nav').is(':visible')) {
+						$('.mobile-nav').css('display', 'block');
+					}
+				}, 400);
 			} else {
 				$('.mobile-nav').stop(true, true).slideUp();
 			}
@@ -732,5 +739,10 @@ $(document).ready(function() {
     if ($('.mobile-header').length) {
         initMobileMenu();
     }
+});
+window.addEventListener('headerLoaded', function() {
+  if (typeof initMobileMenu === 'function') {
+    initMobileMenu();
+  }
 });
 } )( jQuery );

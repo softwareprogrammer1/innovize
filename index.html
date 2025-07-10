@@ -99,9 +99,7 @@
     	.then(res => res.text())
     	.then(data => {
       		document.getElementById('header').innerHTML = data;
-      		if (typeof initMobileMenu === 'function') {
-        		initMobileMenu();
-      		}
+      		window.dispatchEvent(new Event('headerLoaded'));
     	});
 
   	fetch('footer.html')

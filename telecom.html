@@ -158,7 +158,7 @@
                         engineering excellence to provide robust, customized solutions for every environment.
                     </p>
                 </div>
-                <div class="telecom-image"></div>
+                <div class="telecom-image force-hide"></div>
             </div>
             <div class="panel-group" id="telecomAccordion" role="tablist" aria-multiselectable="true">
                 <!-- Core Communication Systems -->
@@ -651,9 +651,7 @@
     <script>
         fetch('header.html').then(res => res.text()).then(data => {
             document.getElementById('header').innerHTML = data;
-            if (typeof initMobileMenu === 'function') {
-                initMobileMenu();
-            }
+            window.dispatchEvent(new Event('headerLoaded'));
         });
         fetch('footer.html').then(res => res.text()).then(data => document.getElementById('footer').innerHTML = data);
     </script>

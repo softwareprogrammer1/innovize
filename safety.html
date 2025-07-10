@@ -158,7 +158,7 @@
                         expanding to meet evolving client needs.
                     </p>
                 </div>
-                <div class="safety-image"></div>
+                <div class="safety-image force-hide"></div>
             </div>
             <div class="panel-group" id="safetyAccordion" role="tabpanel" aria-multiselectable="true">
                 <!-- Detection Systems -->
@@ -343,9 +343,7 @@
     <script>
         fetch('header.html').then(res => res.text()).then(data => {
             document.getElementById('header').innerHTML = data;
-            if (typeof initMobileMenu === 'function') {
-                initMobileMenu();
-            }
+            window.dispatchEvent(new Event('headerLoaded'));
         });
         fetch('footer.html').then(res => res.text()).then(data => document.getElementById('footer').innerHTML = data);
     </script>
