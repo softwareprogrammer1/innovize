@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home – Innovize</title>
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" id="bootstrap-css" href="css/bootstrap.css" type="text/css" media="all">
+	<link rel="stylesheet" id="awesome-font-css" href="css/font-awesome.css" type="text/css" media="all">
+	<link rel="stylesheet" id="ionicon-font-css" href="css/ionicon.css" type="text/css" media="all">
+	<link rel="stylesheet" id="slick-slider-css" href="css/slick.css" type="text/css" media="all">
+	<link rel="stylesheet" id="slick-theme-css" href="css/slick-theme.css" type="text/css" media="all">
+	<link rel="stylesheet" id="magnific-popup-css" href="css/magnific-popup.css" type="text/css" media="all">
+	<link rel="stylesheet" id="industris-style-css" href="style.css" type="text/css" media="all">
+
+	<link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body>
+
+	<div id="page" class="site">
+
+		<div id="header"></div>
+
+		<!-- Slider Start -->
+		<div class="slider" data-show="1" data-arrow="true">
+			<div>
+				<div class="slider-item">
+					<img src="./images/1.png" alt="industris tempalate" draggable="false">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10">
+								<div class="slider-content">
+									<h4>WELCOME TO INNOVIZE...!</h4>
+									<h1>Over 20 years <br> in the Oil & Gas industry </h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="slider-item">
+					<img src="./images/2.png" alt="industris tempalate" draggable="false">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10">
+								<div class="slider-content">
+									<h4>WELCOME TO INNOVIZE...!</h4>
+									<h1>Leader in Oil & Gas services</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="slider-item">
+					<img src="./images/3.png" alt="industris tempalate" draggable="false">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-10">
+								<div class="slider-content">
+									<h4>WELCOME TO INNOVIZE...!</h4>
+									<h1>Best solution for Engineering Services</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- Slider end -->
+
+		<div id="footer"></div>
+
+	</div>
+
+	<script src='js/jquery.min.js'></script>
+	<script src='js/slick.min.js'></script>
+	<script src='js/jquery.sticky.js'></script>
+	<script src='js/countto.min.js'></script>
+	<script src='js/jquery.magnific-popup.min.js'></script>
+	<script src='js/jquery.isotope.min.js'></script>
+	<script src='js/scripts.js'></script>
+
+	<script>
+  	fetch('header.html')
+    	.then(res => res.text())
+    	.then(data => {
+      		document.getElementById('header').innerHTML = data;
+      		if (typeof initMobileMenu === 'function') {
+        		initMobileMenu();
+      		}
+    	});
+
+  	fetch('footer.html')
+    	.then(res => res.text())
+    	.then(data => document.getElementById('footer').innerHTML = data);
+	</script>
+
+</body>
+</html>
