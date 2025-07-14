@@ -17,9 +17,9 @@
     <link rel="shortcut icon" href="favicon.png">
     <style>
         body { background: linear-gradient(135deg, #f2f4f6 60%, #fff 100%); }
-        .container-safety { max-width: 900px; margin: 40px auto 60px auto; padding: 40px 30px 60px 30px; background: #fff; border-radius: 18px; box-shadow: 0 8px 32px rgba(31, 56, 108, 0.10); }
-        h1.safety-title { color: #1a4a73; font-weight: 900; font-size: 2.8rem; text-align: center; margin-bottom: 28px; letter-spacing: 1px; }
-        .safety-intro { font-size: 20px; color: #444; text-align: center; margin-bottom: 32px; line-height: 1.7; }
+        .solution-container { max-width: 900px; margin: 40px auto 60px auto; padding: 40px 30px 60px 30px; background: #fff; border-radius: 18px; box-shadow: 0 8px 32px rgba(31, 56, 108, 0.10); }
+        h1.solution-title { color: #1a4a73; font-weight: 900; font-size: 2.8rem; text-align: center; margin-bottom: 28px; letter-spacing: 1px; }
+        .solution-intro { font-size: 20px; color: #444; text-align: center; margin-bottom: 32px; line-height: 1.7; }
         .panel-group { margin-top: 30px; }
         .panel { border-radius: 12px; box-shadow: 0 2px 12px rgba(31, 56, 108, 0.07); border: none; margin-bottom: 18px; padding: 15px; overflow: hidden; transition: box-shadow 0.2s; }
         .panel:hover { box-shadow: 0 6px 24px rgba(31, 56, 108, 0.13); }
@@ -32,8 +32,8 @@
         .panel-body li { margin-bottom: 8px; font-size: 16px; }
         .panel-group .panel+.panel { margin-top: 0; }
         @media (max-width: 767px) {
-            .container-safety { padding: 16px 2vw 32px 2vw; }
-            h1.safety-title { font-size: 2rem; }
+            .solution-container { padding: 16px 2vw 32px 2vw; }
+            h1.solution-title { font-size: 2rem; }
             .panel-title>a { font-size: 17px; padding: 14px 12px; }
             .panel-body { font-size: 15px; padding: 16px 10px 10px 10px; }
         }
@@ -42,59 +42,59 @@
 <body>
     <div id="page" class="site">
         <div id="header"></div>
-        <div class="container container-safety">
+        <div class="solution-container">
             <div class="safety-section">
                 <div class="safety-text">
-                    <h1 class="safety-title">Control & Instrumentation Systems</h1>
+                    <h1 class="solution-title">Control & Instrumentation Systems</h1>
                     <p>
                         At Innovize, we recognize that a reliable and expertly integrated Control & Instrumentation System is the backbone of any vessel, rig, or industrial facility. The control room serves as the nerve center, where a multitude of systems are monitored to ensure safety, efficiency, and optimal performance. Our solutions blend human expertise with advanced automation, delivering clarity, accuracy, and seamless operation for every client.<br><br>
                     </p>
                 </div>
-                <div class="safety-image force-hide"></div>
+                <div class="control-image force-hide"></div>
             </div>
             <div class="panel-group" id="controlAccordion" role="tabpanel" aria-multiselectable="true">
-                <!-- Tank Gauging Systems -->
+                <!-- Advanced Fault Monitoring System (AFMS) -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTankGauging">
+                    <div class="panel-heading" role="tab" id="headingAFMS">
                         <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseTankGauging" aria-expanded="true" aria-controls="collapseTankGauging">
-                                Tank Gauging Systems
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseAFMS" aria-expanded="false" aria-controls="collapseAFMS">
+                                Advanced Fault Monitoring System (AFMS)
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseTankGauging" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTankGauging">
+                    <div id="collapseAFMS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAFMS">
                         <div class="panel-body">
-                            <p>We deliver advanced tank gauging solutions for monitoring the volume, mass, and level of various tanks, including ballast, water, fuel, and solids. Our systems utilize technologies such as radar, ultrasonic, electro-pneumatic transmitters, and both contact and contactless sensors, ensuring precise and reliable measurements for offshore and onshore facilities.</p>
+                            <p>Our AFMS proactively monitors connected systems for abnormalities, alerting operators before failures occur. All alarms are logged in a built-in data logger, supporting maintenance teams with fault analysis and troubleshooting to minimize downtime.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Liquid Level Measuring Systems -->
+                <!-- Bulk Transfer Control Panel for Mud & Cement Tanks -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingLiquidLevel">
+                    <div class="panel-heading" role="tab" id="headingBulkTransfer">
                         <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseLiquidLevel" aria-expanded="false" aria-controls="collapseLiquidLevel">
-                                Liquid Level Measuring Systems
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseBulkTransfer" aria-expanded="false" aria-controls="collapseBulkTransfer">
+                                Bulk Transfer Control Panel for Mud & Cement Tanks
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseLiquidLevel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLiquidLevel">
+                    <div id="collapseBulkTransfer" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBulkTransfer">
                         <div class="panel-body">
-                            <p>Our liquid level measurement systems provide accurate, real-time monitoring for a wide range of applications. We integrate field transmitters and sensors with PLC modules, converting signals into user-friendly graphical displays on HMI touch screens. Multiple alarm levels and communication protocols (HART, Modbus, Ethernet) ensure seamless integration with other monitoring systems.</p>
+                            <p>Our bulk transfer control systems manage the safe transfer of mud and cement in offshore supply vessels and drilling rigs. Using PLCs and guided microwave level sensors, we automate valve control and tank level monitoring, with process visualization on HMI or mimic panels.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Emergency Shut Down Systems -->
+                <!-- Cable Management & Accessories -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingESD">
+                    <div class="panel-heading" role="tab" id="headingCableMgmt">
                         <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseESD" aria-expanded="false" aria-controls="collapseESD">
-                                Emergency Shut Down Systems (ESD)
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseCableMgmt" aria-expanded="false" aria-controls="collapseCableMgmt">
+                                Cable Management & Accessories
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseESD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingESD">
+                    <div id="collapseCableMgmt" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCableMgmt">
                         <div class="panel-body">
-                            <p>Our ESD systems are engineered to protect personnel, assets, and the environment by initiating safe shutdown procedures during critical events. Featuring redundant CPUs and robust communication, these systems are certified to international standards and integrate with fire & gas, damper, and alarm systems for comprehensive safety coverage.</p>
+                            <p>We provide comprehensive cable management solutions and accessories, ensuring organized, safe, and efficient routing of electrical and instrumentation cabling throughout your facility.</p>
                         </div>
                     </div>
                 </div>
@@ -143,153 +143,33 @@
                         </div>
                     </div>
                 </div>
-                <!-- Sensors & Load Cells -->
+                <!-- Emergency Shut Down Systems (ESD) -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingSensors">
+                    <div class="panel-heading" role="tab" id="headingESD">
                         <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseSensors" aria-expanded="false" aria-controls="collapseSensors">
-                                Sensors & Load Cells
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseESD" aria-expanded="false" aria-controls="collapseESD">
+                                Emergency Shut Down Systems (ESD)
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseSensors" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSensors">
+                    <div id="collapseESD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingESD">
                         <div class="panel-body">
-                            <p>We offer a wide range of sensors and load cells for precise measurement and monitoring of process variables. Our solutions support integration with PLCs and HMIs, providing accurate data for process control and safety applications.</p>
+                            <p>Our ESD systems are engineered to protect personnel, assets, and the environment by initiating safe shutdown procedures during critical events. Featuring redundant CPUs and robust communication, these systems are certified to international standards and integrate with fire & gas, damper, and alarm systems for comprehensive safety coverage.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Industrial Automation Software Programming -->
+                <!-- Engine Alarm Monitoring System -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingAutomationSW">
+                    <div class="panel-heading" role="tab" id="headingEngineAlarm">
                         <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseAutomationSW" aria-expanded="false" aria-controls="collapseAutomationSW">
-                                Industrial Automation Software Programming
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseEngineAlarm" aria-expanded="false" aria-controls="collapseEngineAlarm">
+                                Engine Alarm Monitoring System
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseAutomationSW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAutomationSW">
+                    <div id="collapseEngineAlarm" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEngineAlarm">
                         <div class="panel-body">
-                            <p>Our team develops and implements industrial automation software, including PLC, DCS, and SCADA programming. We ensure seamless integration, user-friendly interfaces, and reliable process automation tailored to your operational requirements.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Cable Management & Accessories -->
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingCableMgmt">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseCableMgmt" aria-expanded="false" aria-controls="collapseCableMgmt">
-                                Cable Management & Accessories
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseCableMgmt" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCableMgmt">
-                        <div class="panel-body">
-                            <p>We provide comprehensive cable management solutions and accessories, ensuring organized, safe, and efficient routing of electrical and instrumentation cabling throughout your facility.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Weather Monitoring Systems -->
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingWeather">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseWeather" aria-expanded="false" aria-controls="collapseWeather">
-                                Weather Monitoring Systems
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseWeather" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingWeather">
-                        <div class="panel-body">
-                            <p>Our weather monitoring systems provide real-time data on environmental conditions, supporting safe and efficient operations in marine and industrial settings. Systems are customizable to meet specific site requirements.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Vessel Monitoring System (VMS) -->
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingVMS">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseVMS" aria-expanded="false" aria-controls="collapseVMS">
-                                Vessel Monitoring System (VMS)
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseVMS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingVMS">
-                        <div class="panel-body">
-                            <p>Our VMS is designed to monitor alarms and critical process conditions across marine and offshore facilities. Built as a scalable, distributed I/O system, it features redundant CPUs and servers, ensuring high reliability and minimal downtime. Remote I/O cabinets connect via redundant industrial protocols for robust communication.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Advanced Fault Monitoring System (AFMS) -->
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingAFMS">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseAFMS" aria-expanded="false" aria-controls="collapseAFMS">
-                                Advanced Fault Monitoring System (AFMS)
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseAFMS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAFMS">
-                        <div class="panel-body">
-                            <p>Our AFMS proactively monitors connected systems for abnormalities, alerting operators before failures occur. All alarms are logged in a built-in data logger, supporting maintenance teams with fault analysis and troubleshooting to minimize downtime.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- HVAC Control System -->
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingHVAC">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseHVAC" aria-expanded="false" aria-controls="collapseHVAC">
-                                HVAC Control System
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseHVAC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingHVAC">
-                        <div class="panel-body">
-                            <p>We supply integrated HVAC control systems that interface with fire and gas detection, enabling automated fire damper activation and ventilation control. Our solutions use SIL-certified PLCs and touch screen HMIs, designed to meet international safety standards and customer specifications.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Remote Valve Control System (RVCS) -->
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingRVCS">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseRVCS" aria-expanded="false" aria-controls="collapseRVCS">
-                                Remote Valve Control System (RVCS)
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseRVCS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRVCS">
-                        <div class="panel-body">
-                            <p>Our RVCS solutions provide centralized control and monitoring of hydraulic, pneumatic, and electric motorized valves. Designed for compliance with major marine class regulations, these systems ensure reliable management of ballast and process valves, with custom HMI interfaces for operators.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Bulk Transfer Control Panel for Mud & Cement Tanks -->
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingBulkTransfer">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseBulkTransfer" aria-expanded="false" aria-controls="collapseBulkTransfer">
-                                Bulk Transfer Control Panel for Mud & Cement Tanks
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseBulkTransfer" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBulkTransfer">
-                        <div class="panel-body">
-                            <p>Our bulk transfer control systems manage the safe transfer of mud and cement in offshore supply vessels and drilling rigs. Using PLCs and guided microwave level sensors, we automate valve control and tank level monitoring, with process visualization on HMI or mimic panels.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Machinery Workshop Equipment -->
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingWorkshop">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseWorkshop" aria-expanded="false" aria-controls="collapseWorkshop">
-                                Machinery Workshop Equipment
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseWorkshop" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingWorkshop">
-                        <div class="panel-body">
-                            <p>We supply custom-designed test benches and workshop equipment for electrical, electronic, pneumatic, and hydraulic testing. Each bench is equipped with calibrated, type-approved instruments and comes with comprehensive technical documentation and support.</p>
+                            <p>Our engine alarm monitoring panels track critical engine parameters and provide clear HMI displays. When readings exceed safe thresholds, alarms are triggered with visual and audible alerts, supporting rapid operator response and equipment protection.</p>
                         </div>
                     </div>
                 </div>
@@ -308,6 +188,81 @@
                         </div>
                     </div>
                 </div>
+                <!-- HVAC Control System -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingHVAC">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseHVAC" aria-expanded="false" aria-controls="collapseHVAC">
+                                HVAC Control System
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseHVAC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingHVAC">
+                        <div class="panel-body">
+                            <p>We supply integrated HVAC control systems that interface with fire and gas detection, enabling automated fire damper activation and ventilation control. Our solutions use SIL-certified PLCs and touch screen HMIs, designed to meet international safety standards and customer specifications.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Industrial Automation Software Programming -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingAutomationSW">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseAutomationSW" aria-expanded="false" aria-controls="collapseAutomationSW">
+                                Industrial Automation Software Programming
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseAutomationSW" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAutomationSW">
+                        <div class="panel-body">
+                            <p>Our team develops and implements industrial automation software, including PLC, DCS, and SCADA programming. We ensure seamless integration, user-friendly interfaces, and reliable process automation tailored to your operational requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Liquid Level Measuring Systems -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingLiquidLevel">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseLiquidLevel" aria-expanded="false" aria-controls="collapseLiquidLevel">
+                                Liquid Level Measuring Systems
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseLiquidLevel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLiquidLevel">
+                        <div class="panel-body">
+                            <p>Our liquid level measurement systems provide accurate, real-time monitoring for a wide range of applications. We integrate field transmitters and sensors with PLC modules, converting signals into user-friendly graphical displays on HMI touch screens. Multiple alarm levels and communication protocols (HART, Modbus, Ethernet) ensure seamless integration with other monitoring systems.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Machinery Workshop Equipment -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingWorkshop">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseWorkshop" aria-expanded="false" aria-controls="collapseWorkshop">
+                                Machinery Workshop Equipment
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseWorkshop" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingWorkshop">
+                        <div class="panel-body">
+                            <p>We supply custom-designed test benches and workshop equipment for electrical, electronic, pneumatic, and hydraulic testing. Each bench is equipped with calibrated, type-approved instruments and comes with comprehensive technical documentation and support.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Remote Valve Control System (RVCS) -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingRVCS">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseRVCS" aria-expanded="false" aria-controls="collapseRVCS">
+                                Remote Valve Control System (RVCS)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseRVCS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRVCS">
+                        <div class="panel-body">
+                            <p>Our RVCS solutions provide centralized control and monitoring of hydraulic, pneumatic, and electric motorized valves. Designed for compliance with major marine class regulations, these systems ensure reliable management of ballast and process valves, with custom HMI interfaces for operators.</p>
+                        </div>
+                    </div>
+                </div>
                 <!-- Refrigerated Space Alarm -->
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingRefrigerated">
@@ -320,6 +275,51 @@
                     <div id="collapseRefrigerated" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRefrigerated">
                         <div class="panel-body">
                             <p>Our refrigerated space alarm systems are designed to alert personnel if someone is accidentally locked inside cold storage rooms. The system provides clear visual and audible signals, with location indication and integration options for broader facility monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sensors & Load Cells -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSensors">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseSensors" aria-expanded="false" aria-controls="collapseSensors">
+                                Sensors & Load Cells
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSensors" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSensors">
+                        <div class="panel-body">
+                            <p>We offer a wide range of sensors and load cells for precise measurement and monitoring of process variables. Our solutions support integration with PLCs and HMIs, providing accurate data for process control and safety applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tank Gauging Systems -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTankGauging">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseTankGauging" aria-expanded="false" aria-controls="collapseTankGauging">
+                                Tank Gauging Systems
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTankGauging" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTankGauging">
+                        <div class="panel-body">
+                            <p>We deliver advanced tank gauging solutions for monitoring the volume, mass, and level of various tanks, including ballast, water, fuel, and solids. Our systems utilize technologies such as radar, ultrasonic, electro-pneumatic transmitters, and both contact and contactless sensors, ensuring precise and reliable measurements for offshore and onshore facilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Vessel Monitoring System (VMS) -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingVMS">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseVMS" aria-expanded="false" aria-controls="collapseVMS">
+                                Vessel Monitoring System (VMS)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseVMS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingVMS">
+                        <div class="panel-body">
+                            <p>Our VMS is designed to monitor alarms and critical process conditions across marine and offshore facilities. Built as a scalable, distributed I/O system, it features redundant CPUs and servers, ensuring high reliability and minimal downtime. Remote I/O cabinets connect via redundant industrial protocols for robust communication.</p>
                         </div>
                     </div>
                 </div>
@@ -338,18 +338,18 @@
                         </div>
                     </div>
                 </div>
-                <!-- Engine Alarm Monitoring System -->
+                <!-- Weather Monitoring Systems -->
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingEngineAlarm">
+                    <div class="panel-heading" role="tab" id="headingWeather">
                         <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseEngineAlarm" aria-expanded="false" aria-controls="collapseEngineAlarm">
-                                Engine Alarm Monitoring System
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#controlAccordion" href="#collapseWeather" aria-expanded="false" aria-controls="collapseWeather">
+                                Weather Monitoring Systems
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseEngineAlarm" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEngineAlarm">
+                    <div id="collapseWeather" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingWeather">
                         <div class="panel-body">
-                            <p>Our engine alarm monitoring panels track critical engine parameters and provide clear HMI displays. When readings exceed safe thresholds, alarms are triggered with visual and audible alerts, supporting rapid operator response and equipment protection.</p>
+                            <p>Our weather monitoring systems provide real-time data on environmental conditions, supporting safe and efficient operations in marine and industrial settings. Systems are customizable to meet specific site requirements.</p>
                         </div>
                     </div>
                 </div>
