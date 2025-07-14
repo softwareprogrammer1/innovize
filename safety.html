@@ -155,27 +155,7 @@
                 <div class="safety-image force-hide"></div>
             </div>
             <div class="panel-group" id="safetyAccordion" role="tabpanel" aria-multiselectable="true">
-                <!-- Detection Systems -->
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFGS">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#safetyAccordion" href="#collapseFGS"
-                                aria-expanded="true" aria-controls="collapseFGS">
-                                Fire & Gas Detection System (FGS)
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseFGS" class="panel-collapse collapse" role="tabpanel"
-                        aria-labelledby="headingFGS">
-                        <div class="panel-body">
-                            <p>Innovize Systems delivers integrated fire and gas detection solutions, identifying
-                                hazards and alerting personnel in compliance with IEC 61508 SIL2, NFPA 72, and EN54. Our
-                                centralized systems streamline monitoring, diagnostics, and maintenance, and scale to
-                                include ESD and HVAC/fire damper controls. We support a wide range of sensors for both
-                                fire and gas detection.</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Sorted accordion panels start -->
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingAFDS">
                         <h4 class="panel-title">
@@ -196,25 +176,6 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingHSSD">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyAccordion"
-                                href="#collapseHSSD" aria-expanded="false" aria-controls="collapseHSSD">
-                                High Sensitivity Smoke Detection System (HSSD)
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseHSSD" class="panel-collapse collapse" role="tabpanel"
-                        aria-labelledby="headingHSSD">
-                        <div class="panel-body">
-                            <p>Our aspirating HSSD solutions provide early fire detection by continuously sampling air,
-                                ideal for data centers, control rooms, and clean rooms. Addressable control panels and
-                                fire-resistant piping ensure reliability in demanding environments.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Emergency & Safety Control -->
-                <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingESD">
                         <h4 class="panel-title">
                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyAccordion"
@@ -228,60 +189,6 @@
                             <p>Our ESD systems ensure human safety and protect infrastructure and the environment when
                                 processes exceed safe limits. Certified with SIL ratings, these systems are highly
                                 available, fault-tolerant, and interface with F&G, fire damper, and PAGA systems.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingSIS">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyAccordion"
-                                href="#collapseSIS" aria-expanded="false" aria-controls="collapseSIS">
-                                Safety Instrumented System (SIS)
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseSIS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSIS">
-                        <div class="panel-body">
-                            <p>Our SIS solutions implement critical safety functions such as emergency and process
-                                shutdown, following IEC 61508 standards. We use leading PLC platforms and conduct
-                                comprehensive hazard analyses to ensure safe operation during hazardous situations.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingICSS">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyAccordion"
-                                href="#collapseICSS" aria-expanded="false" aria-controls="collapseICSS">
-                                Integrated Control & Safety System (ICSS)
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseICSS" class="panel-collapse collapse" role="tabpanel"
-                        aria-labelledby="headingICSS">
-                        <div class="panel-body">
-                            <p>Our ICSS platforms enable real-time monitoring and management of safety systems via HMI
-                                stations, ensuring high availability and operational reliability. Advanced diagnostics
-                                support effective fault tracing and preventive maintenance.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Protection & Suppression -->
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFPS">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyAccordion"
-                                href="#collapseFPS" aria-expanded="false" aria-controls="collapseFPS">
-                                Fire Protection System
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseFPS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFPS">
-                        <div class="panel-body">
-                            <p>We deliver active fire protection systems tailored to customer needs, based on NFPA 72
-                                Fire Safety Plans and certified by global and regional authorities. Our solutions
-                                include sprinkler, deluge, chemical, and gaseous suppression systems, all integrated
-                                with detection and control systems.</p>
                         </div>
                     </div>
                 </div>
@@ -303,7 +210,26 @@
                         </div>
                     </div>
                 </div>
-                <!-- Gas Sampling & Specialized -->
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFGS">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyAccordion" href="#collapseFGS"
+                                aria-expanded="false" aria-controls="collapseFGS">
+                                Fire & Gas Detection System (FGS)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFGS" class="panel-collapse collapse" role="tabpanel"
+                        aria-labelledby="headingFGS">
+                        <div class="panel-body">
+                            <p>Innovize Systems delivers integrated fire and gas detection solutions, identifying
+                                hazards and alerting personnel in compliance with IEC 61508 SIL2, NFPA 72, and EN54. Our
+                                centralized systems streamline monitoring, diagnostics, and maintenance, and scale to
+                                include ESD and HVAC/fire damper controls. We support a wide range of sensors for both
+                                fire and gas detection.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingFGSS">
                         <h4 class="panel-title">
@@ -322,6 +248,78 @@
                         </div>
                     </div>
                 </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFPS">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyAccordion"
+                                href="#collapseFPS" aria-expanded="false" aria-controls="collapseFPS">
+                                Fire Protection System
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFPS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFPS">
+                        <div class="panel-body">
+                            <p>We deliver active fire protection systems tailored to customer needs, based on NFPA 72
+                                Fire Safety Plans and certified by global and regional authorities. Our solutions
+                                include sprinkler, deluge, chemical, and gaseous suppression systems, all integrated
+                                with detection and control systems.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingHSSD">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyAccordion"
+                                href="#collapseHSSD" aria-expanded="false" aria-controls="collapseHSSD">
+                                High Sensitivity Smoke Detection System (HSSD)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseHSSD" class="panel-collapse collapse" role="tabpanel"
+                        aria-labelledby="headingHSSD">
+                        <div class="panel-body">
+                            <p>Our aspirating HSSD solutions provide early fire detection by continuously sampling air,
+                                ideal for data centers, control rooms, and clean rooms. Addressable control panels and
+                                fire-resistant piping ensure reliability in demanding environments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingICSS">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyAccordion"
+                                href="#collapseICSS" aria-expanded="false" aria-controls="collapseICSS">
+                                Integrated Control & Safety System (ICSS)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseICSS" class="panel-collapse collapse" role="tabpanel"
+                        aria-labelledby="headingICSS">
+                        <div class="panel-body">
+                            <p>Our ICSS platforms enable real-time monitoring and management of safety systems via HMI
+                                stations, ensuring high availability and operational reliability. Advanced diagnostics
+                                support effective fault tracing and preventive maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSIS">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#safetyAccordion"
+                                href="#collapseSIS" aria-expanded="false" aria-controls="collapseSIS">
+                                Safety Instrumented System (SIS)
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSIS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSIS">
+                        <div class="panel-body">
+                            <p>Our SIS solutions implement critical safety functions such as emergency and process
+                                shutdown, following IEC 61508 standards. We use leading PLC platforms and conduct
+                                comprehensive hazard analyses to ensure safe operation during hazardous situations.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sorted accordion panels end -->
             </div>
         </div>
         <div id="footer"></div>
