@@ -30,7 +30,6 @@
 
 	// Mobile menu initialization as a function for dynamic header loading
 	function initMobileMenu() {
-		console.log('initMobileMenu called');
 		$('.mobile-menu li:has(ul)').prepend('<span class="arrow"><i class="fa fa-plus"></i></span>');
 		$("#mmenu_toggle").off('click').on('click', function() {
 			$(this).toggleClass("active");
