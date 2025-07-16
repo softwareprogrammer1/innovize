@@ -4838,6 +4838,15 @@ section[id] {
     opacity: 0.7; /* Adjust for faded effect */
 }
 
+.calibration-image {
+    flex: 1;
+    background-image: url('images/calibration.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7; /* Adjust for faded effect */
+}
+
 
 @media (max-width: 767px) {
   .slider,
